@@ -26,7 +26,12 @@ The project includes:
 
 ## Screenshots
 
-(Add screenshots here)
+![Circular Orbit](images/screenshoot1.png)
+![HEO](images/screenshoot2.png)
+![2 Body](images/screenshoot3.png)
+![Hohmann Transfer](images/screenshoot4.png)
+![Stars Orbiting](images/screenshoot5.png)
+![Parabolic Escape](images/screenshoot6.png)
 
 ## Installation
 
