@@ -15,7 +15,7 @@ The project includes:
 
 ## Features
 
-- 2 Body and 1 body simulayion
+- 2 Body and 1 body simulations
 - Newtonian gravity simulation
 - Velocity and position integration
 - Orbital energy calculation
