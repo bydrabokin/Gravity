@@ -96,7 +96,7 @@ Orbital parameters are calculated using:
 
 - Specific orbital energy
 - Angular momentum
-- Eccentricity vector
+- Eccentricity 
 - Semi-major axis equations
 
 More details:
