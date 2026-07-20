@@ -4,7 +4,7 @@ A real-time orbital mechanics simulator written in C using SDL2.
 
 ## Overview
 
-Orbital is a physics simulation that models gravitational interactions and orbital motion using Newtonian mechanics.
+This project is a physics simulation that models gravitational interactions and orbital motion using Newtonian mechanics.
 
 The project includes:
 - Planetary motion simulation
@@ -15,6 +15,7 @@ The project includes:
 
 ## Features
 
+- 2 Body and 1 body simulayion
 - Newtonian gravity simulation
 - Velocity and position integration
 - Orbital energy calculation
@@ -81,7 +82,7 @@ gcc src/main.c -o gravity \
 |---|---|
 | Space | Start simulation |
 | R | Reset |
-| ESC | Exit |
+| H | Hide UI |
 
 ## Physics
 
@@ -108,8 +109,3 @@ More details:
 - SDL2_image
 - SDL2_ttf
 - SDL2_mixer
-
-
-## License
-
-MIT License
