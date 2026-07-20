@@ -25,7 +25,7 @@ The project includes:
 - SDL2 graphics, audio, fonts, and images
 
 ## Showcase
-[![https://www.youtube.com/watch?v=hNupVTu2aC0]](https://www.youtube.com/watch?v=hNupVTu2aC0)
+[https://www.youtube.com/watch?v=hNupVTu2aC0](https://www.youtube.com/watch?v=hNupVTu2aC0)
 
 ## Screenshots
 
