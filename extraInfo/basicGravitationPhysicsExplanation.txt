@@ -1,5 +1,5 @@
 First you calculate the distance between the planets.
-Then you calculate the force of gravity inserted on the moon. F = G * (m1 + m2) / r²
+Then you calculate the force of gravity inserted on the moon. F = G * (m1 * m2) / r²
 You convert it to accelartion based on the moon's mass. F = ma
 You separate that acceleration into ax and ay based of the differnce of x and y as shown below:
 
