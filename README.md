@@ -24,6 +24,9 @@ The project includes:
 - Interactive controls
 - SDL2 graphics, audio, fonts, and images
 
+## Showcase
+[![SHOWCASE]](https://img.youtube.com/vi/hNupVTu2aC0/0.jpg)](https://www.youtube.com/watch?v=hNupVTu2aC0)
+
 ## Screenshots
 
 <p>
@@ -34,6 +37,7 @@ The project includes:
 <img src="images/screenshot5.png" alt="Stars Orbiting" width="400">
 <img src="images/screenshot6.png" alt="Parabolic Escape" width="400">
 </p>
+
 
 ## Installation
 
