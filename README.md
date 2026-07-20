@@ -27,12 +27,12 @@ The project includes:
 ## Screenshots
 
 <p>
-<img src="images/screenshot1.png" alt="Parabolic Escape" width="300">
-<img src="images/screenshot2.png" alt="Circular Orbit" width="300">
-<img src="images/screenshot3.png" alt="HEO" width="300">
-<img src="images/screenshot4.png" alt="Hohmann Transfer" width="300">
-<img src="images/screenshot5.png" alt="Stars Orbiting" width="300">
-<img src="images/screenshot6.png" alt="Parabolic Escape" width="300">
+<img src="images/screenshot1.png" alt="Parabolic Escape" width="400">
+<img src="images/screenshot2.png" alt="Circular Orbit" width="400">
+<img src="images/screenshot3.png" alt="HEO" width="400">
+<img src="images/screenshot4.png" alt="Hohmann Transfer" width="400">
+<img src="images/screenshot5.png" alt="Stars Orbiting" width="400">
+<img src="images/screenshot6.png" alt="Parabolic Escape" width="400">
 </p>
 
 ## Installation
