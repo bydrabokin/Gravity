@@ -2,6 +2,7 @@
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_image.h>
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
@@ -606,8 +607,8 @@ int main() {
     memset(earthTrail, 0, sizeof earthTrail);
 
     // Audio
-    Mix_Chunk *escapeVelmp3       = Mix_LoadWAV("/home/bydra/Coding/physics/orbital/resources/sound/voice/escapeVelocity.mp3");
-    Mix_Chunk *groundCollisionmp3 = Mix_LoadWAV("/home/bydra/Coding/physics/orbital/resources/sound/voice/groundCollsion.mp3");
+    Mix_Chunk *escapeVelmp3       = Mix_LoadWAV("resources/sound/voice/escapeVelocity.mp3");
+    Mix_Chunk *groundCollisionmp3 = Mix_LoadWAV("resources/sound/voice/groundCollsion.mp3");
 
     // Sliders
     // mode 1: min -> 1e17, max -> 1e22 min -> 1e14 1e19
@@ -1487,7 +1488,7 @@ int main() {
     // get points based on the moon's x and y
 
     // how far away is last point
-    lastPointSepartion = sqrt((moonTrail[(trailLengthMoon-1)% 100].x - moon.x)*(moonTrail[(trailLengthMoon-1)% 100].x - moon.x) + (moonTrail[(trailLengthMoon-1)% 100].y - moon.y)*(moonTrail[(trailLengthMoon-1)% 100].y - moon.y));
+    lastPointSepartion = sqrt((moonTrail[(trailLengthMoon-99)% 100].x - moon.x)*(moonTrail[(trailLengthMoon-99)% 100].x - moon.x) + (moonTrail[(trailLengthMoon-99)% 100].y - moon.y)*(moonTrail[(trailLengthMoon-1)% 100].y - moon.y));
     if (lastPointSepartion > 30 * SCALE) { // if last point is at least 30 px away 
         moonTrail[trailLengthMoon % 100] = (SDL_Point){moon.x, moon.y}; // save it
         trailLengthMoon ++;
@@ -1495,7 +1496,7 @@ int main() {
     
 
     // asame for the trail of the earth (only in mode 2)
-    lastPointSepartion = sqrt((earthTrail[(trailLengthMoon-1)% 100].x - earth.x)*(earthTrail[(trailLengthMoon-1)% 100].x - earth.x) + (earthTrail[(trailLengthMoon-1)% 100].y - earth.y)*(earthTrail[(trailLengthMoon-1)% 100].y - earth.y));
+    lastPointSepartion = sqrt((earthTrail[(trailLengthMoon-99)% 100].x - earth.x)*(earthTrail[(trailLengthMoon-99)% 100].x - earth.x) + (earthTrail[(trailLengthMoon-99)% 100].y - earth.y)*(earthTrail[(trailLengthMoon-1)% 100].y - earth.y));
     if (mode == 2 && lastPointSepartion / SCALE > 30) {
         earthTrail[trailLengthEarth % 100] = (SDL_Point){earth.x, earth.y};
         trailLengthEarth++;
@@ -1540,12 +1541,12 @@ int main() {
 
     // trails
     if (savingPoints) {
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 0; i < 100; i++) {
             SDL_RenderDrawPoint(renderer, 900 + (moonTrail[i].x - SCREEN_CENTER_X * SCALE) / zoomFactor, 450 + (moonTrail[i].y - SCREEN_CENTER_Y * SCALE) / zoomFactor);
         }
 
         if (mode == 2) {
-            for (int i = 0; i <= 100; i++) {
+            for (int i = 0; i < 100; i++) {
                 SDL_RenderDrawPoint(renderer, 900 + (earthTrail[i].x - SCREEN_CENTER_X * SCALE) / zoomFactor, 450 + (earthTrail[i].y - SCREEN_CENTER_Y * SCALE) / zoomFactor);
             }
         }
